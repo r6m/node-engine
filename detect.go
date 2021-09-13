@@ -55,6 +55,7 @@ func Detect(nvmrcParser, buildpackYMLParser, nodeVersionParser VersionParser) pa
 		}
 
 		version = os.Getenv("BP_NODE_VERSION")
+		
 		if version != "" {
 			requirements = append(requirements, packit.BuildPlanRequirement{
 				Name: Node,
